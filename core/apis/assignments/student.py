@@ -6,7 +6,7 @@ from core.models.assignments import Assignment
 
 from .schema import AssignmentSchema, AssignmentSubmitSchema
 student_assignments_resources = Blueprint('student_assignments_resources', __name__)
-
+teacher_assignments_resources= Blueprint('teacher_assignment_resources',__name__)
 
 @student_assignments_resources.route('/assignments', methods=['GET'], strict_slashes=False)
 @decorators.auth_principal
